@@ -1,0 +1,132 @@
+config firewall address
+edit n-10.0.0.0_11
+set subnet 10.0.0.0 255.224.0.0
+end
+config firewall addrgrp
+edit Group1
+append member n-10.0.0.0_11
+end
+config firewall address
+edit n-10.1.0.0_16
+set subnet 10.1.0.0 255.255.0.0
+end
+config firewall addrgrp
+edit Group1
+append member n-10.1.0.0_16
+end
+config firewall address
+edit n-10.3.0.0_13
+set subnet 10.3.0.0 255.248.0.0
+end
+config firewall addrgrp
+edit Group1
+append member n-10.3.0.0_13
+end
+config firewall address
+edit n-10.32.32.0_19
+set subnet 10.32.32.0 255.255.224.0
+end
+config firewall addrgrp
+edit Group1
+append member n-10.32.32.0_19
+end
+config firewall address
+edit n-192.131.104.0_2
+set subnet 192.131.104.0 255.255.224.0
+end
+config firewall addrgrp
+edit Group1
+append member n-192.131.104.0_2
+end
+config firewall address
+edit r-10.13.0.0-10.178.255.255
+set type iprange
+set start-ip 10.13.0.0
+set end-ip 10.178.255.255
+end
+config firewall addrgrp
+edit Group1
+append member r-10.13.0.0-10.178.255.255
+end
+config firewall address
+edit r-10.19.0.0-10.189.255.255
+set type iprange
+set start-ip 10.19.0.0
+set end-ip 10.189.255.255
+end
+config firewall addrgrp
+edit Group1
+append member r-10.19.0.0-10.189.255.255
+end
+config firewall address
+edit n-10.23.0.0_16
+set subnet 10.23.0.0 255.255.0.0
+end
+config firewall addrgrp
+edit Group1
+append member n-10.23.0.0_16
+end
+config firewall address
+edit n-10.11.128.0_17
+set subnet 10.11.128.0 255.255.128.0
+end
+config firewall addrgrp
+edit Group1
+append member n-10.11.128.0_17
+end
+config firewall address
+edit n-192.168.0.0_16
+set subnet 192.168.0.0 255.255.0.0
+end
+config firewall addrgrp
+edit Group1
+append member n-192.168.0.0_16
+end
+config firewall address
+edit n-10.132.0.0_16
+set subnet 10.132.0.0 255.255.0.0
+end
+config firewall addrgrp
+edit Group1
+append member n-10.132.0.0_16
+end
+config firewall address
+edit n-10.1.0.0_15
+set subnet 10.1.0.0 255.254.0.0
+end
+config firewall addrgrp
+edit Group1
+append member n-10.1.0.0_15
+end
+config firewall address
+edit n-10.13.0.0_16
+set subnet 10.13.0.0 255.255.0.0
+end
+config firewall addrgrp
+edit Group1
+append member n-10.13.0.0_16
+end
+config firewall address
+edit n-10.0.0.0_12
+set subnet 10.0.0.0 255.240.0.0
+end
+config firewall addrgrp
+edit   Group2
+append member n-10.0.0.0_12
+end
+config firewall address
+edit n-192.168.0.0_15
+set subnet 192.168.0.0 255.254.0.0
+end
+config firewall addrgrp
+edit   Group2
+append member n-192.168.0.0_15
+end
+config firewall address
+edit n-172.17.0.0_23
+set subnet 172.17.0.0 255.255.254.0
+end
+config firewall addrgrp
+edit   Group2
+append member n-172.17.0.0_23
+end
